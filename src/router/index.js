@@ -7,8 +7,11 @@ import Next from "@/page/Next"
 import Next1 from "@/page/Next/next1"
 import Next2 from "@/page/Next/next2"
 
-import Notes from "@/page/Notes"
-import useHooks from "@/page/Notes/use-hooks.jsx"
+import Hooks from "@/page/Hooks"
+
+import Testmobx from "@/page/testmobx"
+
+import useHooks from "@/page/Hooks/use-hooks.jsx"
 // import Template from "@/page/template"
 import Errors from "@/page/errors"
 
@@ -48,16 +51,21 @@ let routes = [
         ]
     },
     {
-        path: '/notes',
-        name:"notes",
-        component: Notes,
+        path: '/hooks',
+        name:"Hooks",
+        component: Hooks,
         children: [
             {
-                path: '/notes/use-hooks',
+                path: '/hooks/use-hooks',
                 name:"useHooks",
                 component: useHooks
             }
         ]
+    },
+    {
+        path: '/testmobx',
+        name:"testmobx",
+        component: Testmobx,
     },
     {
         path: '/mine',

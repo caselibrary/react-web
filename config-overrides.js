@@ -1,5 +1,5 @@
 const path = require('path');
-const { override, fixBabelImports, addLessLoader, addWebpackAlias, overrideDevServer } = require('customize-cra');
+const { override, fixBabelImports, addLessLoader, addWebpackAlias, overrideDevServer,addDecoratorsLegacy,disableEsLint } = require('customize-cra');
 
 // module.exports = function override(config, env) {
 //   config.resolve.alias = {
@@ -40,6 +40,8 @@ module.exports = {
             libraryDirectory: 'es',
             // style: true,//自动打包相关的样式 默认为 style:'css' 采用LESS需要关闭
         }),
+        addDecoratorsLegacy(),
+        disableEsLint(),
         addLessLoader(
             {
                 javascriptEnabled: true,

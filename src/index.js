@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css'; 
+import 'antd/dist/antd.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { Provider } from 'mobx-react'
+import store from './store'
+console.log(store)
 ReactDOM.render(
-    <App />,
+  <Provider {...store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 

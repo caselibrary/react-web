@@ -4,7 +4,6 @@ export const ColorContext = createContext()
 export const UPDATE_COLOR = "UPDATE_COLOR"
 
 const reducer = (state, action) => {
-    console.log(state, action)
     switch (action.type) {
         case UPDATE_COLOR:
             return action.color

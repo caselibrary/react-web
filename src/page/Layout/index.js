@@ -43,8 +43,7 @@ class Layout extends Component {
             <div className="layout">
                 <div className="columnMenu" style={{ width: this.state.collapsed ? 80 : 256 }}>
                     <Menu
-                        defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
+                        defaultOpenKeys={['/'+this.state.current.split("/")[1]]}
                         selectedKeys={[this.state.current]}
                         mode="inline"
                         theme="dark"
