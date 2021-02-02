@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'mobx-react'
 import store from './store'
-console.log(store)
+require('./mock')
 ReactDOM.render(
   <Provider {...store}>
     <App />

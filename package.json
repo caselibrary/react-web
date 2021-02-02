@@ -7,13 +7,17 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "antd": "^4.9.4",
+    "antd": "^3.26.19",
+    "axios": "^0.21.1",
     "mobx": "^6.0.4",
     "mobx-react": "^7.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-images": "^1.1.7",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-zmage": "^0.8.5-beta.36",
+    "viewerjs": "^1.9.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -49,6 +53,7 @@
     "customize-cra": "^1.0.0",
     "less": "^4.0.0",
     "less-loader": "^5.0.0",
+    "mockjs": "^1.1.0",
     "react-app-rewired": "^2.1.8"
   }
 }

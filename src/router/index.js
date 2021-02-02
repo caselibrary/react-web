@@ -11,6 +11,8 @@ import Hooks from "@/page/Hooks"
 
 import Testmobx from "@/page/testmobx"
 
+import View from "@/page/VirtualScroll"
+
 import useHooks from "@/page/Hooks/use-hooks.jsx"
 // import Template from "@/page/template"
 import Errors from "@/page/errors"
@@ -67,6 +69,12 @@ let routes = [
         name:"testmobx",
         component: Testmobx,
     },
+    {
+        path: '/VirtualScroll',
+        name:"VirtualScroll",
+        component: View,
+    },
+    
     {
         path: '/mine',
         name:"mine",

@@ -35,3 +35,43 @@
        
     }
 }
+
+
+.list-view {
+    resize: vertical;
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    border: 1px solid #ddd;
+    * {
+      box-sizing: border-box;
+    }
+    .list-view-empty {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .list-view-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    .list-view-item {
+      cursor: pointer;
+      &:hover {
+        background: #f5f7fa;
+      }
+    }
+  }
+  .scrollBar {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #e3e6eb;
+      border-radius: 2px;
+    }
+  }

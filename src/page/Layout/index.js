@@ -41,7 +41,7 @@ class Layout extends Component {
         let routes = routerMain.filter(item => !item.hidden)
         return (
             <div className="layout">
-                <div className="columnMenu" style={{ width: this.state.collapsed ? 80 : 256 }}>
+                {/* <div className="columnMenu" style={{ width: this.state.collapsed ? 80 : 256 }}>
                     <Menu
                         defaultOpenKeys={['/'+this.state.current.split("/")[1]]}
                         selectedKeys={[this.state.current]}
@@ -67,7 +67,7 @@ class Layout extends Component {
                             })
                         }
                     </Menu>
-                </div>
+                </div> */}
                 <Container handleCollapsed={this.toggleCollapsed.bind(this)} collapsed={this.state.collapsed} name={this.state.name}></Container>
 
 
